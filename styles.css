@@ -2,6 +2,10 @@
 .pg-heading{
     text-align: center;
 }
+.adjust-img{
+    width: 100px;
+    height: 66px;
+}
 *{
     box-sizing: border-box;
     font-family: Roboto;
@@ -15,10 +19,12 @@
 [class*="col-"]{
     float:left;
 }
+
 /*mobile phones*/
 [class*="col-"]{
-    width: 20%;
+    width: 50%;
 }
+
 .row::after {
     content: "";
     clear: both;
@@ -26,6 +32,7 @@
 }
 .col-1{
     padding-bottom: 8px;
+    padding-left: 4px;
 }
 
 .col-2{
@@ -81,14 +88,14 @@ ol{
     /*background-size: cover;*/
 }
 #main-container{
-    padding-left: 18px;
+    padding-left: 10px;
     padding-right: 8px;
     padding-top: 8px;
 }
 .card{
     /* card */
     position: relative;
-    width: 200px;
+    width: auto;
     height: 50px;
     background: rgba(33, 192, 222, 0.7);
     mix-blend-mode: normal;
@@ -98,15 +105,15 @@ ol{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
+    font-size: larger;
     line-height: 56px;
     color: #000000;
     text-align: center;
     font-variant: all-petite-caps;
 }
 .details-card{
-    /*width: fit-content;*/
-    width: 350px;
+    width: auto;
+    /*width: 350px;*/
     background: rgba(33, 192, 222, 0.9);   
     border: 4px solid rgba(255, 203, 5, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -124,14 +131,14 @@ ol{
 }
 
 .card-head-name{
-    font-size: 33px;
+    font-size: 27px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 39px;
     font-variant: all-petite-caps;
 }
 .card-head-stats{
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
 }
@@ -155,8 +162,12 @@ ol{
     background: rgba(196, 196, 196, 0.5);
     border: 1px solid rgba(52, 102, 175, 0.7);
 }
+.card-info-container{
+    font-size: 14px;
+}
 
 .sect-text{
+    font-size: 14px;
     font-variant: small-caps;
     font-weight: bold;
 }
@@ -205,4 +216,236 @@ ol{
 /*hover effect-moves section*/
 .mv:hover {
     cursor: pointer;
+}
+/*Small Tablet*/
+@media only screen and (min-width:500px) and
+(max-width:600px){
+    [class*="col-"]{
+        width: 30%;
+    }
+    .col-2{
+        width: 33%;
+        padding-left: 8px;
+        padding-top: 4px;
+        
+    }
+    .col-3{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 40%;
+    }
+    .col-4{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 58%;
+    }
+    #main-container{
+        padding-left: 18px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    .card{
+        width: 145px;
+    }
+    .details-card{
+        /*width: fit-content;*/
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+/*Tablet*/
+@media only screen and (min-width:601px) and
+(max-width:763px){
+    [class*="col-"]{
+        width: 25%;
+    }
+    .col-2{
+        width: 33%;
+        padding-left: 8px;
+        padding-top: 4px;
+        
+    }
+    .col-3{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 40%;
+    }
+    .col-4{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 58%;
+    }
+    #main-container{
+        padding-left: 18px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    .details-card{
+        /*width: fit-content;*/
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card{
+        width: auto;
+    }
+}
+/*Large Tablet*/
+@media only screen and (min-width:764px) and
+(max-width:1024px){
+    .adjust-img{
+        width: auto;
+        height: auto;
+    }
+    [class*="col-"]{
+        width: 25%;
+    }
+    .col-1{
+        padding-bottom: 8px;
+        padding-left: 0px;
+    }
+    .col-2{
+        width: 33%;
+        padding-left: 8px;
+        padding-top: 4px;
+        
+    }
+    .col-3{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 40%;
+    }
+    .col-4{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 58%;
+    }
+    #main-container{
+        padding-left: 18px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    .card{
+        width: 177px;
+    }
+    .details-card{
+        /*width: fit-content;*/
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+/*Desktop*/
+@media only screen and (min-width:1025px) and
+(max-width:1279px){
+    .adjust-img{
+        width: auto;
+        height: auto;
+    }
+    [class*="col-"]{
+        width: 20%;
+    }
+    .col-1{
+        padding-bottom: 8px;
+        padding-left: 0px;
+    }
+    .col-2{
+        width: 33%;
+        padding-left: 8px;
+        padding-top: 4px;
+        
+    }
+    .col-3{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 40%;
+    }
+    .col-4{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 58%;
+    }
+    #main-container{
+        padding-left: 18px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    .card{
+        width: 177px;
+    }
+    .details-card{
+        /*width: fit-content;*/
+        width: 350px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+/*Desktop*/
+@media only screen and (min-width:1280px){
+    
+    .adjust-img{
+        width: auto;
+        height: auto;
+    }
+
+    [class*="col-"]{
+        width: 16%;
+    }
+    .col-1{
+        padding-bottom: 8px;
+        padding-left: 0px;
+    }
+    .col-2{
+        width: 33%;
+        padding-left: 8px;
+        padding-top: 4px;
+        
+    }
+    .col-3{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 40%;
+    }
+    .col-4{
+        padding-top: 15px;
+        padding-left: 8px;
+        width: 58%;
+    }
+    
+    #main-container{
+        padding-left: 18px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    .card{
+        /* card */
+        position: relative;
+        width: 193px;
+        height: 50px;
+        background: rgba(33, 192, 222, 0.7);
+        mix-blend-mode: normal;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .card-name{
+        font-size: 26px;
+    }
+    .details-card{
+        /*width: fit-content;*/
+        width: 350px;
+    }
+    .card-head-name{
+        font-size: 33px;
+    }
+    .card-head-stats{
+        font-size: 22px;
+    }
+    .card-info-container{
+        font-size: 16px;
+    }
+    
+    
+    
 }

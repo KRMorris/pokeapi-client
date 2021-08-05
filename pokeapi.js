@@ -1,4 +1,4 @@
-fetch('https://pokeapi.co/api/v2/pokemon?limit=15').then(function (response) {
+fetch('https://pokeapi.co/api/v2/pokemon?limit=24').then(function (response) {
     return response.json();
 }).then(function (json) {
     //console.log(json);
